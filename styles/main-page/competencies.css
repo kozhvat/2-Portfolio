@@ -1,0 +1,82 @@
+.competencies {
+  margin-bottom: 150px;
+}
+
+.competencies__header {
+  margin-bottom: 47px;
+  margin-left: -2px;
+  text-shadow: 0px 0px 15px #ffffff;
+}
+
+.html-css::before {
+  content: '';
+  display: block;
+  margin-bottom: 11.5px;
+  margin-left: 2px;
+  width: 45px;
+  height: 45px;
+  background: url(../resources/img/icons/html-icon.png) no-repeat;
+}
+
+.js::before {
+  content: '';
+  display: block;
+  margin-bottom: 15.5px;
+  margin-left: 2px;
+  width: 45px;
+  height: 45px;
+  background: url(../resources/img/icons/js-icon.png) no-repeat;
+}
+
+.lib::before {
+  content: '';
+  display: block;
+  margin-bottom: 15.5px;
+  margin-left: 2px;
+  width: 45px;
+  height: 45px;
+  background: url(../resources/img/icons/lib-icon.png) no-repeat;
+}
+
+.react-native {
+  max-width: 651px;
+}
+
+.react-native::before {
+  content: '';
+  display: block;
+  margin-bottom: 15px;
+  margin-left: 1px;
+  width: 45px;
+  height: 45px;
+  background: url(../resources/img/icons/react-native-icon.png) no-repeat;
+}
+
+.competencies__list {
+  margin-left: -2px;
+}
+
+.competencies__item:not(:last-child) {
+  margin-bottom: 59.6px;
+}
+
+.competencies__name {
+  margin-bottom: 15.2px;
+  font-size: 35px;
+  line-height: 46px;
+  color: #971aff;
+}
+
+.competencies__description {
+  max-width: 778px;
+}
+
+/* ------------------------------------------------------------------------ */
+@media (max-width: 1199px) {
+  /* f */
+}
+
+/* ------------------------------------------------------------------------ */
+@media (max-width: 767px) {
+  /* f */
+}

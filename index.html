@@ -7,7 +7,7 @@
       rel="icon"
       type="image/png"
       sizes="512x512"
-      href="./resources/img/png/icon.png"
+      href="./resources/img/icons/icon.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,104 +16,197 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="header__top-nav container">
-        <a class="header__surname-bg header__prank" href="./index.html"
-          ><p class="header__surname">kozhanov</p>
-          <span class="header__prank-img-container"
-            ><img
-              class="header__prank-img"
-              src="https://goo.su/l1BUq"
-              alt="ну ты понял" /></span
-        ></a>
-        <ul class="header__nav-list">
-          <li class="header__item">
-            <a class="header__link" href="#portfolio">портфолио</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#competencies">компетенции</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#services">услуги</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#contacts">контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__about-me container">
-        <p class="header__what-i-do">
-          Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
-          повышают престиж компании и позволяют
-          <span class="header__mark">выделиться</span> на фоне конкурентов
-        </p>
-        <h1 class="header__who-am-i">
-          Привет, я Вадим — фронтенд разработчик, джедай и дизайнер сайтов
-        </h1>
+    <!-- <section class="gallery">
+      <div class="gallery__header-container container">
+        <h2 class="gallery__header">галерея проектов</h2>
       </div>
-    </header>
+      <ul class="gallery__list">
+        <li class="gallery__item gallery__item-active">
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              srcset="./resources/img/png/gallery/bed-tablet.png"
+            />
+            <img
+              class="gallery__img"
+              src="./resources/img/png/gallery/bed.png"
+              alt="НУЖНО НАПИСАТЬ ОПИСАНИЕ!!!"
+            />
+          </picture>
+          <div class="gallery__description-container container">
+            <a
+              class="gallery__description-link"
+              href="./index.html"
+              target="_blank"
+              >Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж</a
+            >
+          </div>
+        </li>
+        <li class="gallery__item">
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              srcset="./resources/img/png/gallery/yellow-armchair.png"
+            />
+            <img
+              class="gallery__img"
+              src="./resources/img/png/gallery/yellow-armchair.png"
+              alt="НУЖНО НАПИСАТЬ ОПИСАНИЕ!!!"
+            />
+          </picture>
+          <div class="gallery__description-container container">
+            <a
+              class="gallery__description-link"
+              href="./index.html"
+              target="_blank"
+              >Проект гостиной в ЖК Маяк</a
+            >
+          </div>
+        </li>
+        <li class="gallery__item">
+          <picture>
+            <source
+              media="(max-width: 1199px)"
+              srcset="./resources/img/png/gallery/living-room.png"
+            />
+            <img
+              class="gallery__img"
+              src="./resources/img/png/gallery/living-room.png"
+              alt="НУЖНО НАПИСАТЬ ОПИСАНИЕ!!!"
+            />
+          </picture>
+          <div class="gallery__description-container container">
+            <a
+              class="gallery__description-link"
+              href="./index.html"
+              target="_blank"
+              >Визуализация кухни-гостиной в частном доме</a
+            >
+          </div>
+        </li>
+      </ul>
+      <div class="gallery__buttons-container container">
+        <div class="gallery__buttons">
+          <button class="gallery__button">
+            <img
+              class="gallery__button-img gallery__button-back"
+              src="./resources/img/png/arrow.png"
+              alt="кнопка назад к предыдущему проекту"
+            />
+          </button>
+          <button class="gallery__button">
+            <img
+              class="gallery__button-img gallery__button-next"
+              src="./resources/img/png/arrow.png"
+              alt="кнопка далее к следующему проекту"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="header-gallery">
+      <header class="header container">
+        <nav class="header__nav">
+          <a
+            class="header__surname-bg justify-center align-center header__prank"
+            href="./index.html"
+            ><p class="header__surname">kozhanov</p>
+            <span class="header__prank-img-container"
+              ><img
+                class="header__prank-img"
+                src="https://goo.su/l1BUq" /></span
+          ></a>
+          <ul class="header__nav-list">
+            <li class="header__item">
+              <a class="header__link" href="#portfolio">портфолио</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#competencies">компетенции</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#services">услуги</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contacts">контакты</a>
+            </li>
+          </ul>
+          <button class="header__burger burger__btn js-burger__btn"></button>
+        </nav>
+        <div class="header-gallery__about-me">
+          <p class="header-gallery__what-i-do">
+            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
+            повышают престиж компании и позволяют
+            <span class="header-gallery__stand-out">выделиться</span> на фоне
+            конкурентов
+          </p>
+          <h1 class="header-gallery__who-am-i">
+            Привет, я Вадим — фронтенд разработчик, джедай и дизайнер сайтов
+          </h1>
+        </div>
+      </header>
+    </div> -->
     <!-- <main class="content"> -->
     <!-- <section class="projects container">
-        <h2 class="projects__header universal-header" id="portfolio">
-          Самые свежие проекты
-        </h2>
-        <ul class="projects__list">
-          <li class="projects__item">
-            <a
-              class="projects__link"
-              href="https://kozhvat.github.io/Studio-Metrika-SDCODE/"
-              target="_blank"
-            >
-              <img
-                class="projects__img"
-                src="./resources/img/png/metrika.png"
-                alt="небоскрёб на фоне сайта по строительству домов"
-              />
-              <h3 class="projects__name">Cтудия дизайна Метрика</h3>
-              <p class="projects__description">дизайн, верстка, настройка</p>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a
-              class="projects__link"
-              href="https://kozhvat.github.io/Nothing-Ear/"
-              target="_blank"
-            >
-              <img
-                class="projects__img"
-                src="./resources/img/png/nothing-store.png"
-                alt="сайт по продаже очков"
-              />
-              <h3 class="projects__name">Nothing Store</h3>
-              <p class="projects__description">дизайн, верстка, настройка</p>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a
-              class="projects__link"
-              href="https://kozhvat.github.io/course_figma/"
-              target="_blank"
-            >
-              <img
-                class="projects__img"
-                src="./resources/img/png/japan.png"
-                alt="сайт на тему моды и одежды"
-              />
-              <h3 class="projects__name">Japan</h3>
-              <p class="projects__description">дизайн, верстка, настройка</p>
-            </a>
-          </li>
-        </ul>
-        <a
-          class="projects__view-all-link"
-          href="https://github.com/kozhvat?tab=repositories"
-          target="_blank"
-          >Смотреть все проекты</a
-        >
-      </section> -->
+      <h2 class="projects__header universal-header" id="portfolio">
+        Самые свежие проекты
+      </h2>
+      <ul class="projects__list">
+        <li class="projects__item">
+          <a
+            class="projects__link"
+            href="https://kozhvat.github.io/2-Studio-Metrika/"
+            target="_blank"
+          >
+            <img
+              class="projects__img"
+              src="./resources/img/projects/metrika.png"
+              alt="сайт студии дизайна интерьеров"
+            />
+            <h3 class="projects__name">Cтудия дизайна Метрика</h3>
+            <p class="projects__description">дизайн, верстка, настройка</p>
+          </a>
+        </li>
+        <li class="projects__item">
+          <a
+            class="projects__link"
+            href="https://kozhvat.github.io/2-Nothing-Ear/"
+            target="_blank"
+          >
+            <img
+              class="projects__img"
+              src="./resources/img/projects/nothing-store.png"
+              alt="лендинг-магазин наушников"
+            />
+            <h3 class="projects__name">Nothing Store</h3>
+            <p class="projects__description">дизайн, верстка, настройка</p>
+          </a>
+        </li>
+        <li class="projects__item">
+          <a
+            class="projects__link"
+            href="https://kozhvat.github.io/course_figma/"
+            target="_blank"
+          >
+            <img
+              class="projects__img"
+              src="./resources/img/projects/japan.png"
+              alt="сайт на тему путешествия в Японию"
+            />
+            <h3 class="projects__name">Japan</h3>
+            <p class="projects__description">дизайн, верстка, настройка</p>
+          </a>
+        </li>
+      </ul>
+      <a
+        class="projects__view-all-link"
+        href="https://github.com/kozhvat?tab=repositories"
+        target="_blank"
+        >Смотреть все проекты</a
+      >
+    </section> -->
     <!-- <section class="competencies container">
         <h2 class="competencies__header universal-header" id="competencies">
           Мои компетенции
@@ -172,7 +265,7 @@
           <li class="services__item">
             <img
               class="services__img"
-              src="./resources/img/png/turnkey-website.png"
+              src="./resources/img/services/turnkey-website.png"
               alt="пример сайта на тему финансов и бизнеса"
             />
             <div class="services__background">
@@ -190,7 +283,7 @@
           <li class="services__item services__item_other-mb">
             <img
               class="services__img"
-              src="./resources/img/png/site-layout.png"
+              src="./resources/img/services/site-layout.png"
               alt="пример сайта в пурпурных тонах с английской надписью моменты движут нами"
             />
             <div class="services__background">
@@ -205,7 +298,7 @@
           <li class="services__item">
             <img
               class="services__img"
-              src="./resources/img/png/mobile-interface.png"
+              src="./resources/img/services/mobile-interface.png"
               alt="коллаж мобильных интерфейсов"
             />
             <div class="services__background">
@@ -220,7 +313,7 @@
           </li>
         </ul>
       </section> -->
-    <!-- <section class="contacts" id="contacts">
+    <!-- <section class="contacts center-margin" id="contacts">
         <div class="contacts__container container">
           <h2 class="contacts__header">связаться со мной:</h2>
           <ul class="contacts__list">
@@ -260,5 +353,8 @@
         <p class="footer__copyright">Все права защищены. 2023</p>
       </div>
     </footer> -->
+    <script src="./scripts/gallery.js"></script>
+    <script src="./scripts/header-gallery.js"></script>
+    <script src="./scripts/burger.js"></script>
   </body>
 </html>
