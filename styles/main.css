@@ -1,6 +1,5 @@
 @import url(header.css);
 @import url(burger.css);
-@import url(./main-page/gallery.css);
 @import url(./main-page/header-gallery.css);
 @import url(./main-page/projects.css);
 @import url(./main-page/competencies.css);
@@ -55,6 +54,7 @@ input {
 }
 
 .container {
+  margin: 0 auto;
   max-width: 1150px;
 }
 

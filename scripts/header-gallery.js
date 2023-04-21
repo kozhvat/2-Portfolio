@@ -1,9 +1,15 @@
-const ACTIVE_SLIDE_CLASSNAME = 'gallery__item-active';
+const HEADER_GALLERY_ACTIVE_SLIDE_CLASSNAME = 'header-gallery__item_active';
 
-const slidesNodes = Array.from(document.querySelectorAll('.gallery__item'));
-console.log(slidesNodes);
-const prevButtonNode = document.querySelector('.gallery__button-back');
-const nextButtonNode = document.querySelector('.gallery__button-next');
+const headerGallerySlidesNodes = Array.from(
+  document.querySelectorAll('.header-gallery__item')
+);
+console.log(headerGallerySlidesNodes);
+const headerGalleryPrevButtonNode = document.querySelector(
+  '.header-gallery__button-back'
+);
+const headerGalleryNextButtonNode = document.querySelector(
+  '.header-gallery__button-next'
+);
 let activeId;
 
 init();
@@ -11,11 +17,11 @@ init();
 function init() {
   activeId = 0;
 
-  prevButtonNode.addEventListener('click', () => {
+  headerGalleryPrevButtonNode.addEventListener('click', () => {
     setActiveSlideById(getPrevId());
   });
 
-  nextButtonNode.addEventListener('click', () => {
+  headerGalleryNextButtonNode.addEventListener('click', () => {
     setActiveSlideById(getNextId());
   });
 }
@@ -24,14 +30,18 @@ function setActiveSlideById(id) {
   const currentId = activeId;
   activeId = id;
 
-  slidesNodes[currentId].classList.remove(ACTIVE_SLIDE_CLASSNAME);
-  slidesNodes[activeId].classList.add(ACTIVE_SLIDE_CLASSNAME);
+  headerGallerySlidesNodes[currentId].classList.remove(
+    HEADER_GALLERY_ACTIVE_SLIDE_CLASSNAME
+  );
+  headerGallerySlidesNodes[activeId].classList.add(
+    HEADER_GALLERY_ACTIVE_SLIDE_CLASSNAME
+  );
 }
 
 function getPrevId() {
-  return activeId === 0 ? slidesNodes.length - 1 : activeId - 1;
+  return activeId === 0 ? headerGallerySlidesNodes.length - 1 : activeId - 1;
 }
 
 function getNextId() {
-  return activeId === slidesNodes.length - 1 ? 0 : activeId + 1;
+  return activeId === headerGallerySlidesNodes.length - 1 ? 0 : activeId + 1;
 }
