@@ -58,6 +58,11 @@ input {
   max-width: 1150px;
 }
 
+.universal-header {
+  font-size: 55px;
+  line-height: 72px;
+}
+
 .universal-description {
   font-size: 22px;
   line-height: 29px;
