@@ -1,5 +1,5 @@
 .services {
-  margin-bottom: 150px;
+  padding-bottom: 150px;
 }
 
 .services__header {
@@ -18,9 +18,13 @@
   margin-bottom: 136px;
 }
 
+.services__img {
+  width: 100%;
+}
+
 .services__background {
   margin-top: -2px;
-  height: 283px;
+  height: fit-content;
   background: #191c19;
   border-radius: 30px;
 }

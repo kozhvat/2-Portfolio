@@ -3,7 +3,6 @@
 @import url(./main-page/header-gallery.css);
 @import url(./main-page/projects.css);
 @import url(./main-page/competencies.css);
-@import url(./main-page/feedback.css);
 @import url(./main-page/services.css);
 @import url(./main-page/contacts.css);
 @import url(footer.css);
@@ -73,6 +72,16 @@ input {
   line-height: 29px;
 }
 
+/* ------------------------------------------------------------------------ */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ------------------------------------------------------------------------ */
 @media (max-width: 767px) {
   .container {
     padding-right: 12px;
@@ -88,17 +97,4 @@ input {
   .col {
     width: 100%;
   }
-}
-
-/* ------------------------------------------------------------------------ */
-@media (max-width: 1199px) {
-  .container {
-    max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-/* ------------------------------------------------------------------------ */
-@media (max-width: 767px) {
 }

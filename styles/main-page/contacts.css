@@ -2,29 +2,112 @@
   padding-bottom: 150px;
   max-width: 1400px;
   height: 717px;
-  background: url(../resources/img/contacts-bg.png) no-repeat;
+}
+
+.contacts__bg-container,
+.contacts__img-container {
+  width: 50%;
+}
+
+.contacts__bg-container {
+  width: 100%;
+  height: 100%;
+  background-color: #191c19;
+  border-radius: 30px;
+}
+
+.contacts__inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__img-container {
+  height: 100%;
+  border-radius: 30px 0;
+  background: url(../../resources/img/contacts-bg.png) 100% 50% / auto 100%
+    no-repeat;
+}
+
+.contacts__content-container {
+  padding: 100px 122px 100px 122px;
 }
 
 .contacts__header {
-  padding-top: 320px;
-  padding-bottom: 29px;
-  font-size: 35px;
+  padding-bottom: 60px;
+  max-width: 553px;
+  font-size: 60px;
   line-height: 60px;
   text-shadow: 0px 0px 15px #ffffff;
 }
 
-.contacts__link {
-  display: block;
-  padding-bottom: 20px;
-  font-size: 60px;
-  line-height: 60px;
-  text-decoration: none;
+.contacts__inputs-list {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+}
+
+.contacts__input-item {
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 22px;
+  line-height: 29px;
+  box-shadow: inset 0 0 15px #971aff, 0 0 5px #971aff;
+}
+
+.contacts__input {
+  width: 100%;
+  padding: 16px 40px 15px 40px;
+  font-family: 'IBM Plex Mono';
+  font-size: 22px;
+  line-height: 29px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.contacts__input:focus-visible {
+  outline: none;
+  background: #111111;
+  box-shadow: inset 0 0 15px #971aff, 0 0 10px #971aff;
+}
+
+.contacts__input:focus-visible::placeholder {
+  color: white;
+  text-shadow: 0px 0px 5px #ffffff;
+}
+
+.contacts__submit-container {
+  width: 450px;
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #971aff;
+  cursor: pointer;
   transition: 0.4s;
 }
 
-.contacts__link:hover {
-  color: #b255ff;
-  text-shadow: 0px 0px 15px #971aff, 0px 0px 5px #971aff;
+.contacts__submit-container:hover {
+  background-color: #000000;
+  box-shadow: inset 0px 0px 15px #971aff, 0px 0px 5px #971aff,
+    0px 0px 20px #971aff, 0px 0px 10px #971aff;
+}
+
+.contacts__submit-container:hover .contacts__submit {
+  color: #971aff;
+  text-shadow: 0px 0px 1px #971aff;
+}
+
+.contacts__submit {
+  font-size: 22px;
+  line-height: 29px;
+  color: #111111;
+  text-shadow: 0px 0px 1px #000000;
 }
 
 /* ------------------------------------------------------------------------ */
