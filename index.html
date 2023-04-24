@@ -21,112 +21,125 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <div class="header-gallery">
-      <ul class="header-gallery__list">
-        <li class="header-gallery__item header-gallery__item_active">
-          <picture class="header-gallery__picture">
-            <source
-              media="(max-width: 1199px)"
-              srcset="./resources/img/header-gallery/header-bg-mobile.png"
-            />
-            <img
-              class="header-gallery__img"
-              src="./resources/img/header-gallery/header-bg.png"
-              alt="моё фото номер 1"
-            />
-          </picture>
-        </li>
-        <li class="header-gallery__item">
-          <picture class="header-gallery__picture">
-            <source
-              media="(max-width: 1199px)"
-              srcset="./resources/img/header-gallery/header-bg-mobile-2.png"
-            />
-            <img
-              class="header-gallery__img"
-              src="./resources/img/header-gallery/header-bg-2.png"
-              alt="моё фото номер 2"
-            />
-          </picture>
-        </li>
-        <li class="header-gallery__item">
-          <picture class="header-gallery__picture">
-            <source
-              media="(max-width: 1199px)"
-              srcset="./resources/img/header-gallery/header-bg-mobile-3.png"
-            />
-            <img
-              class="header-gallery__img"
-              src="./resources/img/header-gallery/header-bg-3.png"
-              alt="моё фото номер 3"
-            />
-          </picture>
-        </li>
-      </ul>
-      <div class="header-gallery__inner container">
-        <header class="header-gallery__header header">
-          <nav class="header__nav">
-            <a
-              class="header__surname-bg justify-center align-center header__prank"
-              href="./index.html"
-              ><p class="header__surname">kozhanov</p>
-              <span class="header__prank-img-container"
-                ><img
-                  class="header__prank-img"
-                  src="https://goo.su/l1BUq" /></span
-            ></a>
-            <ul class="header__nav-list">
-              <li class="header__item">
-                <a class="header__link" href="#portfolio">портфолио</a>
+    <header class="header js-header">
+      <div class="header__nav-container container">
+        <nav class="header__nav">
+          <a
+            class="header__surname-bg justify-center align-center header__prank"
+            href="./index.html"
+            ><p class="header__surname">kozhanov</p>
+            <span class="header__prank-img-container"
+              ><img
+                class="header__prank-img"
+                src="https://goo.su/l1BUq" /></span
+          ></a>
+          <ul class="header__nav-list">
+            <li class="header__item">
+              <a class="header__link" href="#portfolio">портфолио</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#competencies">компетенции</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#services">услуги</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contacts">контакты</a>
+            </li>
+          </ul>
+          <button class="header__burger burger__btn js-burger__btn">
+            <ul class="burger__arrow-list">
+              <li class="burger__arrow-item">
+                <div class="burger__arrow"></div>
               </li>
-              <li class="header__item">
-                <a class="header__link" href="#competencies">компетенции</a>
+              <li class="burger__arrow-item">
+                <div class="burger__arrow"></div>
               </li>
-              <li class="header__item">
-                <a class="header__link" href="#services">услуги</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="#contacts">контакты</a>
+              <li class="burger__arrow-item">
+                <div class="burger__arrow"></div>
               </li>
             </ul>
-            <button class="header__burger burger__btn js-burger__btn"></button>
-          </nav>
-        </header>
-        <div class="header-gallery__buttons">
-          <button class="header-gallery__button header-gallery__button-back">
-            <img
-              class="header-gallery__button-img"
-              src="./resources/img/icons/arrow.png"
-              alt="кнопка назад к предыдущему проекту"
-            />
           </button>
-          <button class="header-gallery__button header-gallery__button-next">
-            <img
-              class="header-gallery__button-img"
-              src="./resources/img/icons/arrow.png"
-              alt="кнопка далее к следующему проекту"
-            />
-          </button>
-        </div>
-        <div class="header-gallery__about-me">
-          <p class="header-gallery__what-i-do">
-            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
-            повышают престиж компании и позволяют
-            <span class="header-gallery__stand-out">выделиться</span> на фоне
-            конкурентов
-          </p>
-          <h1 class="header-gallery__who-am-i">
-            Привет, я Вадим — фронтенд разработчик,
-            <span class="jedai">джедай</span> и дизайнер сайтов
-          </h1>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
     <main class="content">
-      <section class="projects container">
-        <h2 class="projects__header universal-header" id="portfolio">
-          Самые свежие проекты
-        </h2>
+      <section class="header-gallery">
+        <ul class="header-gallery__list">
+          <li class="header-gallery__item header-gallery__item_active">
+            <picture class="header-gallery__picture">
+              <source
+                media="(max-width: 1199px)"
+                srcset="./resources/img/header-gallery/header-bg-mobile.png"
+              />
+              <img
+                class="header-gallery__img"
+                src="./resources/img/header-gallery/header-bg.png"
+                alt="моё фото номер 1"
+              />
+            </picture>
+          </li>
+          <li class="header-gallery__item">
+            <picture class="header-gallery__picture">
+              <source
+                media="(max-width: 1199px)"
+                srcset="./resources/img/header-gallery/header-bg-mobile-2.png"
+              />
+              <img
+                class="header-gallery__img"
+                src="./resources/img/header-gallery/header-bg-2.png"
+                alt="моё фото номер 2"
+              />
+            </picture>
+          </li>
+          <li class="header-gallery__item">
+            <picture class="header-gallery__picture">
+              <source
+                media="(max-width: 1199px)"
+                srcset="./resources/img/header-gallery/header-bg-mobile-3.png"
+              />
+              <img
+                class="header-gallery__img"
+                src="./resources/img/header-gallery/header-bg-3.png"
+                alt="моё фото номер 3"
+              />
+            </picture>
+          </li>
+        </ul>
+        <div class="header-gallery__inner container">
+          <div class="box"></div>
+          <div class="header-gallery__buttons">
+            <button class="header-gallery__button header-gallery__button-back">
+              <img
+                class="header-gallery__button-img"
+                src="./resources/img/icons/arrow.png"
+                alt="кнопка назад к предыдущему проекту"
+              />
+            </button>
+            <button class="header-gallery__button header-gallery__button-next">
+              <img
+                class="header-gallery__button-img"
+                src="./resources/img/icons/arrow.png"
+                alt="кнопка далее к следующему проекту"
+              />
+            </button>
+          </div>
+          <div class="header-gallery__about-me">
+            <p class="header-gallery__what-i-do">
+              Разрабатываю имиджевые сайты для малого и среднего бизнеса,
+              которые повышают престиж компании и позволяют
+              <span class="header-gallery__stand-out">выделиться</span> на фоне
+              конкурентов
+            </p>
+            <h1 class="header-gallery__who-am-i">
+              Привет, я Вадим — фронтенд разработчик,
+              <span class="jedai">джедай</span> и дизайнер сайтов
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="projects container" id="portfolio">
+        <h2 class="projects__header universal-header">Самые свежие проекты</h2>
         <ul class="projects__list">
           <li class="projects__item">
             <a
@@ -134,15 +147,21 @@
               href="https://kozhvat.github.io/2-Studio-Metrika/"
               target="_blank"
             >
-              <img
-                class="projects__img"
-                src="./resources/img/projects/metrika.png"
-                alt="сайт студии дизайна интерьеров"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./resources/img/projects/metrika-mobile.png"
+                />
+                <img
+                  class="projects__img"
+                  src="./resources/img/projects/metrika.png"
+                  alt="сайт студии дизайна интерьеров"
+                />
+              </picture>
               <div class="projects__terms-bg">
                 <p class="projects__terms">дизайн интерьера</p>
               </div>
-              <h3 class="projects__name">Cтудия дизайна Метрика</h3>
+              <h3 class="projects__item-header">Cтудия дизайна Метрика</h3>
               <p class="projects__description">дизайн, верстка, настройка</p>
             </a>
           </li>
@@ -152,15 +171,22 @@
               href="https://kozhvat.github.io/2-Nothing-Ear/"
               target="_blank"
             >
-              <img
-                class="projects__img"
-                src="./resources/img/projects/nothing-store.png"
-                alt="лендинг-магазин наушников"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./resources/img/projects/nothing-store-mobile.png"
+                />
+                <img
+                  class="projects__img nothing-ear"
+                  src="./resources/img/projects/nothing-store.png"
+                  alt="лендинг-магазин наушников"
+                />
+              </picture>
+
               <div class="projects__terms-bg">
                 <p class="projects__terms">презентация продукта</p>
               </div>
-              <h3 class="projects__name">Nothing Store</h3>
+              <h3 class="projects__item-header">Nothing Store</h3>
               <p class="projects__description">дизайн, верстка, настройка</p>
             </a>
           </li>
@@ -170,15 +196,21 @@
               href="https://kozhvat.github.io/course_figma/"
               target="_blank"
             >
-              <img
-                class="projects__img"
-                src="./resources/img/projects/japan.png"
-                alt="сайт на тему путешествия в Японию"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./resources/img/projects/japan-mobile.png"
+                />
+                <img
+                  class="projects__img"
+                  src="./resources/img/projects/japan.png"
+                  alt="сайт на тему путешествия в Японию"
+                />
+              </picture>
               <div class="projects__terms-bg">
                 <p class="projects__terms">обзор путешествий</p>
               </div>
-              <h3 class="projects__name">Japan</h3>
+              <h3 class="projects__item-header">Japan</h3>
               <p class="projects__description">дизайн, верстка, настройка</p>
             </a>
           </li>
@@ -190,10 +222,8 @@
           >Смотреть все проекты</a
         >
       </section>
-      <section class="competencies container">
-        <h2 class="competencies__header universal-header" id="competencies">
-          Мои компетенции
-        </h2>
+      <section class="competencies container" id="competencies">
+        <h2 class="competencies__header universal-header">Мои компетенции</h2>
         <ul class="competencies__list row">
           <li class="competencies__item col">
             <div class="competencies__text">
@@ -248,8 +278,8 @@
           </li>
         </ul>
       </section>
-      <section class="services container" id="contacts">
-        <h2 class="services__header" id="services">
+      <section class="services container" id="services">
+        <h2 class="services__header universal-header">
           Помогаю реализовать широкий спектр задач
         </h2>
         <ul class="services__list">
@@ -260,7 +290,7 @@
               alt="пример сайта на тему финансов и бизнеса"
             />
             <div class="services__background">
-              <h3 class="services__name">Разработка сайта под ключ</h3>
+              <h3 class="services__item-header">Разработка сайта под ключ</h3>
               <p
                 class="services__description universal-description services__description-exclusive"
               >
@@ -278,7 +308,7 @@
               alt="пример сайта в пурпурных тонах с английской надписью моменты движут нами"
             />
             <div class="services__background">
-              <h3 class="services__name">Верстка сайтов</h3>
+              <h3 class="services__item-header">Верстка сайтов</h3>
               <p class="services__description universal-description">
                 Это процесс создания HTML-документов и применения к ним стилей
                 на CSS. Фронтенд разработчик может помочь создать
@@ -293,7 +323,9 @@
               alt="коллаж мобильных интерфейсов"
             />
             <div class="services__background">
-              <h3 class="services__name">Разработка мобильного интерфейса</h3>
+              <h3 class="services__item-header">
+                Разработка мобильного интерфейса
+              </h3>
               <p class="services__description universal-description">
                 Это процесс создания интерактивных элементов на странице с
                 помощью JavaScript. Фронтенд разработчик может помочь создать
@@ -352,7 +384,7 @@
           </h2>
           <p class="footer__copyright">Все права защищены. 2023</p>
         </div>
-        <div class="footer__links">
+        <div class="footer__links" id="contacts">
           <ul class="footer__list">
             <li class="footer__item">
               <a
@@ -373,20 +405,76 @@
             <li class="footer__item">
               <a
                 class="footer__link"
-                href="https://www.instagram.com/vadim.kozhanov/"
+                href="https://vk.com/kozhvat/"
                 target="_blank"
-                >instagram</a
+                >VK</a
               >
             </li>
           </ul>
-          <a href="data-processing-policy-link"
-            ><p class="data-processing-policy-description">
-              политика обработки данных
-            </p></a
+          <a class="footer__data-processing-policy" href="/stub-page.html"
+            >политика обработки данных</a
           >
         </div>
       </div>
     </footer>
+
+    <div class="burger js-burger">
+      <div class="burger__content-panel">
+        <button class="burger__close-btn js-burger__btn">&times;</button>
+        <div
+          class="burger__surname header__surname-bg justify-center align-center header__prank"
+        >
+          <p class="header__surname">kozhanov</p>
+          <span class="header__prank-img-container"
+            ><img class="header__prank-img" src="https://goo.su/l1BUq"
+          /></span>
+        </div>
+        <ul class="burger__nav-list">
+          <li class="burger__item">
+            <a class="burger__link" href="#portfolio">портфолио</a>
+          </li>
+          <li class="burger__item">
+            <a class="burger__link" href="#competencies">компетенции</a>
+          </li>
+          <li class="burger__item">
+            <a class="burger__link" href="#services">услуги</a>
+          </li>
+          <li class="burger__item">
+            <a class="burger__link" href="#contacts">контакты</a>
+          </li>
+        </ul>
+        <div class="burger__communication js-burger__content">
+          <p class="burger__for-communication">для связи:</p>
+          <ul class="burger__communication-list">
+            <li class="burger__communication-item">
+              <a
+                class="burger__communication-link"
+                href="mailto:kozhvat@mail.ru"
+                target="_blank"
+                >mail</a
+              >
+            </li>
+            <li class="burger__communication-item">
+              <a
+                class="burger__communication-link"
+                href="https://t.me/kozhvat"
+                target="_blank"
+                >telegram</a
+              >
+            </li>
+            <li class="burger__communication-item">
+              <a
+                class="burger__communication-link"
+                href="https://vk.com/kozhvat/"
+                target="_blank"
+                >VK</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/header.js"></script>
     <script src="./scripts/header-gallery.js"></script>
     <script src="./scripts/burger.js"></script>
   </body>

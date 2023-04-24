@@ -5,11 +5,10 @@
 .projects__header {
   margin-bottom: 40px;
   margin-left: -5px;
-  text-shadow: 0px 0px 15px #ffffff;
 }
 
 .projects__list {
-  margin-bottom: 78px;
+  margin-bottom: 80px;
   overflow: hidden;
 }
 
@@ -21,6 +20,7 @@
   display: block;
   position: relative;
   height: 550px;
+  background: #000000;
   transition: 0.5s;
 }
 
@@ -41,6 +41,10 @@
   opacity: 0.85;
 }
 
+.nothing-ear {
+  outline: 1px solid #ffffff;
+}
+
 .projects__terms-bg {
   position: absolute;
   top: 50px;
@@ -56,20 +60,24 @@
 }
 
 .projects__terms {
-  padding: 0px 15px 2px 15px;
+  padding: 0px 15px 2px;
   font-size: 20px;
   line-height: 27px;
   text-shadow: 0px 0px 5px #000000;
 }
 
-.projects__name {
+.projects__item-header,
+.projects__description {
+  text-shadow: 0px 0px 20px #000000, 0px 0px 20px #ffffff;
+}
+
+.projects__item-header {
   max-width: 430px;
   left: 50px;
   bottom: 94px;
   position: absolute;
   font-size: 35px;
   line-height: 46px;
-  text-shadow: 0px 0px 20px #000000;
 }
 
 .projects__description {

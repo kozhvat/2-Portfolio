@@ -22,10 +22,6 @@
     0 0 / cover no-repeat scroll;
 }
 
-.header-gallery__header {
-  margin-bottom: 20px;
-}
-
 .header-gallery__list {
   width: 100%;
 }
@@ -53,11 +49,13 @@
   transform: translateX(-50%);
   width: 100%;
   height: 100vh;
-  padding-bottom: 40px;
+  padding: 0 15px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  z-index: 10;
+  justify-content: flex-end;
+  z-index: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .header-gallery__what-i-do {
@@ -97,6 +95,11 @@
     0px 0px 15px #971aff;
 }
 
+.box {
+  width: 100%;
+  height: 95px;
+}
+
 .header-gallery__buttons {
   margin-bottom: 20px;
   width: 100%;
@@ -109,10 +112,11 @@
 .header-gallery__button {
   cursor: pointer;
   transition: 0.4s;
+  opacity: 0.8;
 }
 
 .header-gallery__button:hover {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .header-gallery__button-img {

@@ -1,10 +1,10 @@
 .contacts {
-  padding-bottom: 150px;
+  padding-bottom: 10px;
   max-width: 1400px;
   height: 717px;
 }
 
-.contacts__bg-container,
+.contacts__content-container,
 .contacts__img-container {
   width: 50%;
 }
@@ -30,7 +30,14 @@
 }
 
 .contacts__content-container {
-  padding: 100px 122px 100px 122px;
+  padding: 100px 15px 100px 122px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.contacts__header,
+.contacts-inputs {
+  max-width: 570px;
 }
 
 .contacts__header {
@@ -38,7 +45,7 @@
   max-width: 553px;
   font-size: 60px;
   line-height: 60px;
-  text-shadow: 0px 0px 15px #ffffff;
+  text-shadow: 0px 0px 10px #ffffff;
 }
 
 .contacts__inputs-list {
@@ -81,7 +88,7 @@
 }
 
 .contacts__submit-container {
-  width: 450px;
+  max-width: 450px;
   height: 70px;
   border-radius: 10px;
   display: flex;

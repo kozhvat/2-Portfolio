@@ -35,6 +35,10 @@
   line-height: 30px;
 }
 
+.footer__copyright-header {
+  max-width: 476px;
+}
+
 .footer__copyright {
   padding-bottom: 24px;
   font-size: 20px;
@@ -62,11 +66,21 @@
   transition: 0.4s;
 }
 
-.data-processing-policy-description {
+.footer__link:hover {
+  opacity: 0.5;
+}
+
+.footer__data-processing-policy {
+  display: block;
   padding-bottom: 24px;
   font-size: 20px;
   line-height: 27px;
   opacity: 0.5;
+  transition: 0.4s;
+}
+
+.footer__data-processing-policy:hover {
+  opacity: 1;
 }
 
 /* ------------------------------------------------------------------------ */

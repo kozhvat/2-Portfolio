@@ -1,0 +1,43 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.stub-page__content {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: darkblue;
+  border-radius: 120px;
+}
+.stub-page__container {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+}
+.stub-page__header {
+  margin: 10px;
+  display: block;
+  font-style: inherit;
+  font-size: 150px;
+  color: darkblue;
+}
+@media (max-width: 1199px) {
+  .stub-page__header {
+    font-size: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .stub-page__header {
+    font-size: 50px;
+  }
+}
