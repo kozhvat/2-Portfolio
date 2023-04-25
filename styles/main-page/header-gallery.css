@@ -176,10 +176,12 @@
   }
 
   .header-gallery__stand-out {
-    font-size: 18px;
+    font-size: 13px;
+    line-height: 13px;
   }
   .header-gallery__stand-out:hover {
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 13px;
   }
 
   .header-gallery__who-am-i {
