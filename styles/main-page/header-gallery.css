@@ -191,13 +191,13 @@
 @media (max-width: 422px) or (max-height: 422px) {
   .header-gallery__what-i-do {
     margin-bottom: 10px;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 11px;
+    line-height: 13px;
   }
 
   .header-gallery__who-am-i {
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 23px;
   }
 }
 
