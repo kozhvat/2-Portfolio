@@ -107,7 +107,6 @@
           </li>
         </ul>
         <div class="header-gallery__inner container">
-          <div class="box"></div>
           <div class="header-gallery__buttons">
             <button class="header-gallery__button header-gallery__button-back">
               <img
@@ -149,7 +148,7 @@
             >
               <picture>
                 <source
-                  media="(max-width: 767px)"
+                  media="(max-width: 499px)"
                   srcset="./resources/img/projects/metrika-mobile.png"
                 />
                 <img
@@ -161,8 +160,10 @@
               <div class="projects__terms-bg">
                 <p class="projects__terms">дизайн интерьера</p>
               </div>
-              <h3 class="projects__item-header">Cтудия дизайна Метрика</h3>
-              <p class="projects__description">дизайн, верстка, настройка</p>
+              <div class="projects__text">
+                <h3 class="projects__item-header">Cтудия дизайна Метрика</h3>
+                <p class="projects__description">дизайн, верстка, настройка</p>
+              </div>
             </a>
           </li>
           <li class="projects__item">
@@ -173,7 +174,7 @@
             >
               <picture>
                 <source
-                  media="(max-width: 767px)"
+                  media="(max-width: 499px)"
                   srcset="./resources/img/projects/nothing-store-mobile.png"
                 />
                 <img
@@ -186,8 +187,10 @@
               <div class="projects__terms-bg">
                 <p class="projects__terms">презентация продукта</p>
               </div>
-              <h3 class="projects__item-header">Nothing Store</h3>
-              <p class="projects__description">дизайн, верстка, настройка</p>
+              <div class="projects__text">
+                <h3 class="projects__item-header">Nothing Store</h3>
+                <p class="projects__description">дизайн, верстка, настройка</p>
+              </div>
             </a>
           </li>
           <li class="projects__item">
@@ -198,7 +201,7 @@
             >
               <picture>
                 <source
-                  media="(max-width: 767px)"
+                  media="(max-width: 499px)"
                   srcset="./resources/img/projects/japan-mobile.png"
                 />
                 <img
@@ -210,8 +213,10 @@
               <div class="projects__terms-bg">
                 <p class="projects__terms">обзор путешествий</p>
               </div>
-              <h3 class="projects__item-header">Japan</h3>
-              <p class="projects__description">дизайн, верстка, настройка</p>
+              <div class="projects__text">
+                <h3 class="projects__item-header">Japan</h3>
+                <p class="projects__description">дизайн, верстка, настройка</p>
+              </div>
             </a>
           </li>
         </ul>
@@ -284,16 +289,20 @@
         </h2>
         <ul class="services__list">
           <li class="services__item">
-            <img
-              class="services__img"
-              src="./resources/img/services/turnkey-website.png"
-              alt="пример сайта на тему финансов и бизнеса"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./resources/img/services/turnkey-website-mobile.png"
+              />
+              <img
+                class="services__img"
+                src="./resources/img/services/turnkey-website.png"
+                alt="пример сайта на тему финансов и бизнеса"
+              />
+            </picture>
             <div class="services__background">
               <h3 class="services__item-header">Разработка сайта под ключ</h3>
-              <p
-                class="services__description universal-description services__description-exclusive"
-              >
+              <p class="services__description universal-description">
                 Это создание дизайн веб-сайтов, созданный для удобства
                 пользователя и решения бизнес-задач<br />Сайты должны быть
                 понятными и удобными, ведь чем понятнее сайт, тем быстрее
@@ -302,11 +311,17 @@
             </div>
           </li>
           <li class="services__item services__item_other-mb">
-            <img
-              class="services__img"
-              src="./resources/img/services/site-layout.png"
-              alt="пример сайта в пурпурных тонах с английской надписью моменты движут нами"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./resources/img/services/site-layout-mobile.png"
+              />
+              <img
+                class="services__img"
+                src="./resources/img/services/site-layout.png"
+                alt="пример сайта в пурпурных тонах с английской надписью моменты движут нами"
+              />
+            </picture>
             <div class="services__background">
               <h3 class="services__item-header">Верстка сайтов</h3>
               <p class="services__description universal-description">
@@ -317,11 +332,17 @@
             </div>
           </li>
           <li class="services__item">
-            <img
-              class="services__img"
-              src="./resources/img/services/mobile-interface.png"
-              alt="коллаж мобильных интерфейсов"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="./resources/img/services/mobile-interface-mobile.png"
+              />
+              <img
+                class="services__img"
+                src="./resources/img/services/mobile-interface.png"
+                alt="коллаж мобильных интерфейсов"
+              />
+            </picture>
             <div class="services__background">
               <h3 class="services__item-header">
                 Разработка мобильного интерфейса
@@ -378,13 +399,10 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__copyright-container">
+        <div class="footer__links" id="contacts">
           <h2 class="footer__copyright-header">
             Портфолио фронтенд-разработчика Вадима Кожанова
           </h2>
-          <p class="footer__copyright">Все права защищены. 2023</p>
-        </div>
-        <div class="footer__links" id="contacts">
           <ul class="footer__list">
             <li class="footer__item">
               <a
@@ -411,6 +429,9 @@
               >
             </li>
           </ul>
+        </div>
+        <div class="footer__copyright-container">
+          <p class="footer__copyright">Все права защищены. 2023</p>
           <a class="footer__data-processing-policy" href="/stub-page.html"
             >политика обработки данных</a
           >

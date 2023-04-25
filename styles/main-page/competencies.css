@@ -78,11 +78,6 @@
   line-height: 46px;
 }
 
-.competencies__description {
-  font-size: 22px;
-  line-height: 29px;
-}
-
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
   .competencies {
@@ -90,7 +85,7 @@
   }
 
   .competencies__header {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   .competencies__list {
@@ -102,30 +97,30 @@
     width: calc(50% - 2.5px);
   }
 
-  .competencies__item-header {
-    margin-bottom: 25px;
-    font-size: 35px;
-    line-height: 48px;
+  .html-css::before,
+  .js::before,
+  .lib::before,
+  .react-native::before {
+    margin-bottom: 10px;
   }
 
-  .competencies__description {
-    font-size: 20px;
-    line-height: 27px;
+  .competencies__item-header {
+    margin-bottom: 13px;
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 767px) {
   .competencies {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 
   .competencies__header {
-    margin-bottom: 22px;
+    margin-bottom: 35px;
   }
-
   .competencies__list {
-    flex-direction: column;
     row-gap: 60px;
     column-gap: 0;
   }
@@ -134,14 +129,10 @@
     width: 100%;
   }
 
-  /* .competencies__item:last-child:nth-child(2n + 1) {
-    margin-top: 8px;
-  } */
-
   .competencies__item-header {
-    margin-bottom: 10px;
-    font-size: 25px;
-    line-height: 34px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    line-height: 36px;
   }
 
   .competencies__description {

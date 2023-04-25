@@ -62,6 +62,7 @@
   position: absolute;
   top: 0;
   left: 50%;
+  opacity: 0.2;
   transform: translateX(-100%);
   visibility: hidden;
   z-index: 9999;
@@ -108,8 +109,7 @@
 /* ------------------------------------------------------------------------ */
 @media (max-width: 1199px) {
   .header__nav-list {
-    opacity: 0;
-    visibility: hidden;
+    display: none;
   }
 }
 

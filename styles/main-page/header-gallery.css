@@ -1,5 +1,5 @@
 .header-gallery {
-  margin-bottom: 151px;
+  margin-bottom: 150px;
   height: 100vh;
   position: relative;
   display: flex;
@@ -83,9 +83,9 @@
 
 .header-gallery__who-am-i {
   margin-left: -6px;
-  max-width: 1095px;
-  font-size: 80px;
-  line-height: 70px;
+  max-width: 1037px;
+  font-size: 70px;
+  line-height: 60px;
   color: #971aff;
   text-shadow: 0px 0px 20px #000000, 0px 0px 15px #971aff;
 }
@@ -135,10 +135,44 @@
 
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
+  .header-gallery {
+    margin-bottom: 100px;
+  }
+
+  .header-gallery__about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-gallery__who-am-i {
+    max-width: 100%;
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 767px) {
+  .header-gallery__what-i-do {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .header-gallery__stand-out {
+    font-size: 18px;
+  }
+  .header-gallery__stand-out:hover {
+    font-size: 20px;
+  }
+
+  .header-gallery__who-am-i {
+    font-size: 29px;
+    line-height: 35px;
+  }
 }
 
 /* @media screen and (orientation: portrait) {

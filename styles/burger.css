@@ -136,31 +136,6 @@
   line-height: 46px;
 }
 
-/* .burger__contacts-header {
-  margin-left: 2px;
-  margin-bottom: 12px;
-  font-size: 16px;
-  line-height: 22px;
-  opacity: 0.5;
-}
-.burger__tel,
-.burger__mail {
-  margin-left: 2px;
-  margin-bottom: 10px;
-  width: fit-content;
-  font-size: 20px;
-  line-height: 20px;
-  display: block;
-  text-decoration: none;
-  border-bottom: 1px solid #000000;
-  transition: 0.4s;
-}
-.burger__tel:hover,
-.burger__mail:hover {
-  border-bottom: 1px solid #ffffff;
-  opacity: 0.5;
-} */
-
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
   .burger__btn {
@@ -170,16 +145,5 @@
 
 /* ----------------------------------------------------------------------------- */
 @media (max-width: 767px) {
-  .burger__btn {
-    top: 19px;
-    right: 12px;
-    width: 38px;
-    height: 38px;
-  }
-  .burger__btn_open {
-    top: 19px;
-    right: 20px;
-    width: 35px;
-    height: 35px;
-  }
+  /* f */
 }
