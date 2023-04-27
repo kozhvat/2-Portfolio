@@ -8,13 +8,13 @@
 @import url(stub-page.css);
 @import url(footer.css);
 
-/* html {
-  font-size: 62.5%;  это 10px
-} */
+html {
+  scroll-behavior: smooth;
+  /* font-size: 62.5%;  это 10px */
+}
 
 body {
   /* font-size: 1.6rem; */ /* 16px */
-  scroll-behavior: smooth;
   background: #000000;
   position: relative;
 }
