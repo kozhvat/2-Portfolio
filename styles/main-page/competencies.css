@@ -37,7 +37,7 @@
   margin-left: 2px;
   width: 45px;
   height: 45px;
-  background: url(../../resources/img/icons/lib-icon.png) no-repeat;
+  background: url(../../resources/img/icons/react-native-icon.png) no-repeat;
 }
 
 .react-native::before {
@@ -46,7 +46,7 @@
   margin-left: 1px;
   width: 45px;
   height: 45px;
-  background: url(../../resources/img/icons/react-native-icon.png) no-repeat;
+  background: url(../../resources/img/icons/lib-icon.png) no-repeat;
 }
 
 .competencies__list {
